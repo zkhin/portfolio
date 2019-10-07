@@ -1,12 +1,72 @@
 
+body {
+    font-family: "Work Sans";
+}
+
+main {
+    margin-left: 20%;
+    /* margin-right: 25%; */
+}
+
+section h1, h2, h3, h4, h5 {
+    margin-left: 3rem;
+    font-weight: lighter;
+    color: rgba(13, 41, 39, 0.75);
+}
+
+.contact {
+    display: flex;
+    /* border: solid 1px #333; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 5px 0 rgba(13, 31, 41, 0.75); */
+    font-family: "IBM Plex Sans";
+    /* padding: .5em; */
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: fit-content;
+    background-color: white;
+    color: #333;
+}
+
+.contact-info {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.contact-info p {
+    margin-top: .5em;
+}
+
+.contact img {
+    width: 120px;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(13, 31, 41, 0.75);
+    border-radius: 8px;
+    margin: 2px;
+}
+
+.bio {
+    margin-top: 1rem;
+    width: 80%;
+    border-top: solid 1px black;
+    line-height: 1.5;
+}
+
+.bio p {
+    padding: 3rem, 1rem;
+    padding-inline-start: 10%;
+    padding-inline-end: 50%;
+}
+
 .logoimg {
-    height: 1rem;
+    height: 1.4rem;
     width: 4rem;
     fill: white;
-    padding: 0;
+    overflow: hidden;
 }
 
  /* Add a black background color to the top navigation */
+ 
  .topnav {
     background-color: #333;
     overflow: hidden;
@@ -20,26 +80,24 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    /* padding: 14px 16px; */
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
-  .topnav > a {
-    padding: 14px 20px; 
-  }
 
   
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #fdfefe;
-    color: black;
+    color: #333;
   }
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
     float: left;
     background-color: #333;
+    padding: none;
     /* height: 3em;
     width: 3em; */
   }
@@ -53,6 +111,14 @@
 
 
 @media screen and (max-width: 600px) {
+    main {
+        margin-left: auto;
+    }
+    .bio p {
+        padding: 3rem, 1rem;
+        padding-inline-start: 15%;
+        padding-inline-end: 10%;
+    }
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;

@@ -1,79 +1,158 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="description" content="Zayar Khin Full Stack Developer">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Zayar Khin Full Stack Developer" />
     <title>Zayar's Portfolio</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Work+Sans&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
     <script src="https://code.jquery.com/jquery.min.js"></script>
-</head>
-<body>
-    <header>
-        <!-- <nav> -->
-            <nav class="topnav" id="topnav">
-                <a href="#home" class="navlink active"><img class="logoimg" src="img/zlogo.svg"></a>
-                <a href="#news" class="navlink">News</a>
-                <a href="#contact" class="navlink">Contact</a>
-                <a href="#about" class="navlink">About</a>
-                <a href="#" class="icon">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
-        <!-- </nav> -->
-        <section class="contact">
-                <div>
-                    <img class="profilepic" src="img/Profile.png">
-                </div>
-                <div class="contact-info">
-                    <p><b>Zayar Khin</b></p>
-                    <em>Full Stack </em>
-                    <em>Javascript </em>
-                    <em>Python</em>
-                    <p>
-                    <a>GitHub</a><a>LinkedIn</a><a>Email</a>
-                    </p>
+  </head>
 
-                </div>
-        </section>
+  <body>
+    <header>
+      <!-- <nav> -->
+      <nav class="topnav" id="topnav">
+        <a href="#home" class="navlink active"
+          ><img class="logoimg" src="img/zlogo.svg"
+        /></a>
+        <a href="#news" class="navlink">News</a>
+        <a href="#contact" class="navlink">Contact</a>
+        <a href="#about" class="navlink">About</a>
+        <a href="#" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <!-- </nav> -->
+      <section class="contact">
+        <div>
+          <img class="profilepic" src="img/Profile.png" />
+        </div>
+        <div class="contact-info">
+          <p><b>Zayar Khin</b></p>
+          <em>Full Stack </em>
+          <em>Javascript </em>
+          <em>Python</em>
+          <p><a>GitHub</a><a>LinkedIn</a><a>Email</a></p>
+        </div>
+      </section>
     </header>
     <main>
-
-        <section class="bio">
-            <h1>Hi, I'm Zayar</h1>
-            <div class="bio2">
-                <div>
-                <p>Realizing the imagination into the world through code is nothing short of <em>amazing</em>...
-                    its potential to delight, inspire, automate, and improve life is why I became a software developer...</p>
-
-                </div>
-                <div>
-                <p><b>My mission is to transform ideas into well crafted code</b>
-                <p>...through efficient data structures and models, clear and robust logic, and emphasizing the user in the form and function of any application...</p>
-                </div>
+      <section class="bio">
+        <h1>Hi, I'm Zayar</h1>
+        <div class="bio2">
+          <div>
+            <p>
+              Realizing the imagination into the world through code is nothing
+              short of <em>amazing</em>... its potential to delight, inspire,
+              automate, and improve life is why I became a software developer...
+            </p>
+          </div>
+          <div>
+            <p>
+              <b>My mission is to transform ideas into well crafted code</b>
+            </p>
+            <p>
+              ...through efficient data structures and models, clear and robust
+              logic, and emphasizing the user in the form and function of any
+              application...
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <h2>Some of my projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h4>Test Project</h4>
+            <div class="project-images">
+              <img
+                src="./screenshots/visiri-dashboard.jpg"
+                alt="Project image"
+              />
+              <img
+                src="./screenshots/visiri-labelling.jpg"
+                alt="Project image"
+              />
             </div>
-        </section>
-        <section class="projects">
-            <h2>Some of my projects</h2>
-            <div class="project">
-                <title><h4>Test Project</h4></title>
-                <details>Short description of project</details>
-                <img src="#" alt="Project image" />
-                <div class="project-links">
-                    <ul>
-                        <li><a href="#">Github</a></li>
-                        <li><a href="#">Live Demo</a></li>
-                    </ul>
-                </div>
+
+            <div class="project-links">
+              <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Live Demo</a></li>
+                <li>
+                  <details>Short description of project</details>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+
+          <div class="project">
+            <h4>Test Project</h4>
+            <div class="project-images">
+              <img
+                src="./screenshots/visiri-dashboard.jpg"
+                alt="Project image"
+              />
+              <img
+                src="./screenshots/visiri-labelling.jpg"
+                alt="Project image"
+              />
+            </div>
+
+            <div class="project-links">
+              <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Live Demo</a></li>
+                <li>
+                  <details>Short description of project</details>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project">
+            <h4>Test Project</h4>
+            <div class="project-images">
+              <img
+                src="./screenshots/visiri-dashboard.jpg"
+                alt="Project image"
+              />
+              <img
+                src="./screenshots/visiri-labelling.jpg"
+                alt="Project image"
+              />
+            </div>
+
+            <div class="project-links">
+              <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Live Demo</a></li>
+                <li>
+                  <details>Short description of project</details>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script type="text/javascript" src="./index.js"></script>
-</body>
+  </body>
 </html>

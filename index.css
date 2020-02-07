@@ -196,17 +196,14 @@ header {
 .project-info {
   background-color: #f6f6f6;
   width: 100%;
-  padding: 1em 1em;
-  /* margin: 5px 5px 5px 5px; */
+  padding: 1rem 1rem;
   color: #222;
-  /* width: 95%; */
-  /* margin-top: 3px; */
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .project-info p {
-  font-size: 1rem;
+  font-size: 1.1em;
   line-height: 1.4em;
   padding: 0.5em;
   margin-left: auto;

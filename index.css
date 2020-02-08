@@ -328,7 +328,7 @@ header {
 }
 
 .logoimg {
-  height: 3rem;
+  max-height: 2.5em;
   margin-left: 1em;
   width: 6rem;
   fill: white;
@@ -337,8 +337,10 @@ header {
 
 /* Add a black background color to the top navigation */
 header {
+  position: relative;
   width: 100%;
-  /* height: 20vh; */
+  height: auto;
+  padding: 0 0;
   background-color: #333;
   /* box-shadow: 0 0 5px 0 rgba(13, 41, 39, 0.75); */
 }
@@ -423,7 +425,7 @@ nav {
   }
 
   .logoimg {
-    height: 2rem;
+    height: 1em;
     margin-left: 0;
     /* width: 3em; */
   }
@@ -432,7 +434,6 @@ nav {
     display: none;
   }
   .topnav a.icon {
-    float: right;
     display: block;
     color: #ffd758;
   }
@@ -469,7 +470,8 @@ nav {
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
-    top: 0;
+    /* height: 100%; */
+    bottom: 0;
     color: #ffd758;
     background-color: #333;
     transition: 0.2s ease-in-out;

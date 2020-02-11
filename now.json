@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "alias": "zayar",
+  "name": "zayar",
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ]
+}

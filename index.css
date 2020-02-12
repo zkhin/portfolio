@@ -6,39 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body {
-  background-image: linear-gradient(175deg, #2b373f, #36434e, #135168, #031a35);
-  -webkit-background-image: linear-gradient(
-    175deg,
-    #333333,
-    #36434e,
-    #135168,
-    #064c66
-  );
-  background-size: 120% 120%;
-  background-position: 0% 90%;
-}
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 90%;
-    background-size: 150% 100%;
-  }
-  25% {
-    background-position: 90% 100%;
-    background-size: 300% 300%;
-  }
-  75% {
-    background-position: 0% 90%;
-    background-size: 150% 100%;
-  }
-}
-
-html:not([data-scroll="0"]) body {
-  padding-top: 1em;
-}
-
-html:not([data-scroll="0"]) header {
+header {
   position: fixed;
   top: 0;
   background-color: #fff;
@@ -60,13 +29,6 @@ h4,
 h5 {
   margin-left: 1.2em;
   font-weight: lighter;
-  color: rgba(223, 255, 253, 0.75);
-}
-
-h1::after,
-h2::after,
-h3::after {
-  content: " /";
 }
 
 details {
@@ -108,22 +70,10 @@ nav {
   position: relative;
   float: right;
   display: flex;
-  color: #ffd758;
   text-align: center;
   padding: 10px 30px 30px 30px;
   text-decoration: none;
   font-size: 1.4rem;
-}
-
-.topnav a:hover {
-  background-color: #ffd758;
-  color: #333;
-}
-
-.topnav a.active {
-  float: left;
-  background-color: #333;
-  padding: 0 0;
 }
 
 .topnav .icon {
@@ -145,12 +95,11 @@ nav {
 
 .bio h1 {
   font-size: 1.5em;
-  color: #ffd758;
   margin-bottom: 0;
 }
 .bio p {
   text-align: left;
-  color: whitesmoke;
+  color: rgb(75, 75, 75);
   padding: 0.5rem, 0.5rem;
   padding-inline-start: 15%;
   padding-inline-end: 10%;
@@ -166,6 +115,7 @@ nav {
 }
 .bio2 div {
   flex-direction: column;
+  background-color: #333;
   padding: 4px;
 }
 
@@ -185,7 +135,6 @@ nav {
 }
 
 .bio2 em {
-  color: #ffd728;
   font-size: 1.1em;
 }
 
@@ -195,15 +144,12 @@ nav {
   right: 10%;
   display: flex;
   border-radius: 8px;
-  font-family: "IBM Plex Sans";
   font-size: small;
   margin-top: 1rem;
   margin-left: 1rem;
   width: fit-content;
   background-color: rgb(253, 253, 253);
   color: #333;
-  box-shadow: 0 0 5px 0 rgba(13, 41, 39, 0.75);
-  transition: opacity 1s linear;
   z-index: 9;
 }
 
@@ -216,17 +162,9 @@ nav {
   margin-top: 0.5rem;
 }
 
-.contact-info em:not(:last-of-type)::after {
-  content: "|";
-}
-
-.contact-info a:not(:last-child)::after {
-  content: " | ";
-}
 .contact img {
   max-height: 100px;
   color: white;
-  box-shadow: 0 2px 2px 0 rgba(13, 31, 41, 0.75);
   border-radius: 8px;
   margin: 2px;
 }
@@ -234,7 +172,6 @@ nav {
 .projects-container {
   position: relative;
   padding-top: 2rem;
-  box-shadow: 1px 1px 1px 1px rgba(68, 68, 68, 0.75);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +182,6 @@ nav {
 }
 
 .project h4 {
-  color: #ffd758;
   text-align: left;
   padding: 5px 5px;
   margin: 0 5% 0;
@@ -262,14 +198,12 @@ nav {
 .project-images {
   position: relative;
   padding: 5px 5px;
-  background-color: rgb(235, 240, 245);
   width: 100%;
   max-width: 800px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 1;
-  box-shadow: 0 0 5px 0 rgba(13, 41, 39, 0.75);
 }
 
 .project-description {
@@ -306,7 +240,6 @@ nav {
 
 .project-info a {
   display: block;
-  color: #ffd758;
   width: 100px;
   text-align: center;
   background-color: rgb(66, 66, 66);
@@ -315,14 +248,8 @@ nav {
   transition: all 0.2s ease-in-out;
 }
 
-.project-info a:hover {
-  color: #333;
-  background-color: #ffd758;
-}
-
 .project-title {
   padding: 10px 10px 10px;
-  color: #ffd758;
   text-align: left;
   width: 100%;
 }
@@ -339,8 +266,6 @@ nav {
   align-items: center;
   border: #888 solid 1px;
   border-radius: 0px;
-  box-shadow: 0 10px 10px 0 rgba(13, 31, 41, 0.75),
-    0 5px 5px 0 rgba(13, 31, 41, 0.75);
   margin-bottom: 2rem;
   margin-left: 1em;
   margin-right: 1em;
@@ -400,13 +325,7 @@ nav {
     right: 0;
     top: 0;
     bottom: 0;
-
     padding: 10px 5px 5px 5px;
-    color: #ffd758;
-  }
-  .topnav a.icon:hover {
-    background-color: #ffd758;
-    color: #333;
   }
 }
 
@@ -422,10 +341,7 @@ nav {
   .logoimg {
     left: 40vw;
   }
-  .topnav.responsive a.icon:hover {
-    color: #333;
-    background-color: #ffd758;
-  }
+
   .topnav.responsive a:not(:last-child) {
     float: none;
     font-size: 1.2em;
@@ -436,7 +352,6 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-    color: #ffd758;
     background-color: #333;
     transition: 0.2s ease-in-out;
   }

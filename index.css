@@ -61,7 +61,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin-left: 1.2em;
+  margin-left: 10vw;
   font-weight: lighter;
   color: rgba(223, 255, 253, 0.75);
 }
@@ -98,17 +98,17 @@ header {
 .bio p {
   text-align: left;
   color: whitesmoke;
-  padding: 0.5rem, 0.5rem;
+  padding: 0.5rem, 10vw;
   padding-inline-start: 15%;
   padding-inline-end: 10%;
   font-size: 0.9em;
   padding-inline-start: 5%;
-  padding: 1em, 1em;
+  padding: 1em, 10vw;
   margin-right: 1em;
 }
 .bio > p {
   display: block;
-  margin-left: 1em;
+  margin-left: 5vw;
   color: rgb(212, 212, 212);
 }
 .bio2 div {
@@ -208,10 +208,10 @@ header {
   /* max-width: 50%; */
   margin: 2px 2px 2px 2px;
   /* max-height: 500px; */
-  transition: all 0.25s linear;
+  transition: all 0.25s ease;
 }
 .project img:active {
-  position: relative;
+  position: absolute;
   transform: scale(1.5);
   margin: 2px 2px 2px 2px;
 }
@@ -342,7 +342,7 @@ nav {
   display: flex;
   color: #ffd758;
   text-align: center;
-  padding: 10px 30px 30px 30px;
+  padding: 10px 10vw 30px 30px;
   text-decoration: none;
   font-size: 1.4rem;
 }
@@ -370,12 +370,14 @@ nav {
 .AboutMe,
 .ContactMe {
   padding: 2em;
+  margin-left: 10vw;
+  margin-right: 10vw;
   line-height: 1.4em;
   color: whitesmoke;
 }
 
 .AboutMe p {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 1100px) {

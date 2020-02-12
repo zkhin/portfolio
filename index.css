@@ -15,10 +15,7 @@ body {
     #135168,
     #064c66
   );
-  /* background-attachment: scroll; */
   background-size: 120% 120%;
-  animation: gradient 5s ease;
-  -webkit-animation: gradient 5s ease;
   background-position: 0% 90%;
 }
 

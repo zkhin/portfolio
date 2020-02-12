@@ -168,7 +168,8 @@ header {
 }
 
 .contact-info a:not(:last-child)::after {
-  content: " | ";
+  content: "|";
+  margin: 5px;
 }
 .contact img {
   max-height: 100px;

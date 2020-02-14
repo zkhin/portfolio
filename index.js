@@ -8,6 +8,14 @@ function handleToggleNav() {
       x.className = "topnav";
     }
   });
+  $(".topnav").on("click", ".navlink", event => {
+    var x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  });
 }
 
 const debounce = fn => {
